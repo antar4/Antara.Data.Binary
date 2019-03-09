@@ -39,7 +39,7 @@ d.Add1(true);
 d.Add(1234);
 d.Add("Foo");
 d.Add((long)6);
-d.Add((byte)128);
+d.Add((byte)64);
 
 bool boolVal = d.Get1();
 int intVal = d.GetInt();
@@ -57,7 +57,7 @@ byte byteVal = d.GetByte();
 
 **Q:** Can it do anything else? You talked about high level of control  
 **A:** Sure, look at this example. Lets assume I have an enumeration or value that I *know* can only take values from 0-6. What data type should I use for this value?  
-**Q:** You should probably go with `byte` and only use 8 bytes  
+**Q:** You should probably go with `byte` and only use 1 bytes (8 bits)  
 **A:** Not really, I actually need only 3 bits:
 
 ```c#
