@@ -14,7 +14,7 @@ Antara.Data.Binary is a high performance general purpose binary serialization li
 
 ## Competition
 
-**Q:** Why do we need another serialization library? There's already dot net, protobuff, json, etc.
+**Q:** Why do we need another serialization library? There's already dot net, protobuff, json, etc.  
 **A:** Each of these libraries solves the same problem as Antara.Data.Binary but with different approaches, see below:
 
 ### dot net
@@ -31,15 +31,7 @@ Json is bloated, its speed is not that great. It's great value comes from the fa
 
 ## Documentation
 
-[Basic Usage](BASIC_USAGE.md)
-
-[Using in classes](CLASSES.md)
-
-[Collections](COLLECTIONS.md)
-
-[Versioning](VERSIONING.md)
-
-[Advanced Topics](ADVANCED_TOPICS.md)
+[Basic Usage](BASIC_USAGE.md)  [Using in classes](CLASSES.md)  [Collections](COLLECTIONS.md)  [Versioning](VERSIONING.md)  [Advanced Topics](ADVANCED_TOPICS.md)
 
 
 
