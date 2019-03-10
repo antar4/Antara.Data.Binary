@@ -31,7 +31,11 @@ Json is bloated, its speed is not that great. It's great value comes from the fa
 
 ## Documentation
 
-[Basic Usage](BASIC_USAGE.md)  [Using in classes](CLASSES.md)  [Collections](COLLECTIONS.md)  [Versioning](VERSIONING.md)  [Advanced Topics](ADVANCED_TOPICS.md)
+- [Basic Usage](BASIC_USAGE.md) 
+- [Using in classes](CLASSES.md)  
+- [Collections](COLLECTIONS.md)  
+- [Versioning](VERSIONING.md)  
+- [Advanced Topics](ADVANCED_TOPICS.md)
 
 
 
