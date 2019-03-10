@@ -14,7 +14,7 @@ BVector d = new BVector();
 d.Add(1234); // adding
 ```
 
-**Q:** And now you added an integer, can you do anything with it?  
+**Q:** You added an integer, can you do anything with it?  
 **A:** Yes, I can convert it to a byte[]
 
 ```c#
