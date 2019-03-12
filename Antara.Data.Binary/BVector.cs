@@ -276,6 +276,63 @@ namespace Antara.Data.Binary
         #endregion
 
         #region ------------------------------ Basic - Object Length -------------------------
+
+        /// <summary>
+        /// Stores the length of an object by using the least possible space
+        /// and resizes the BVector to fit the length indicator
+        /// </summary>
+        /// <param name="len">The length of object</param>
+        /// <param name="itemSize">The size of the item's bits</param>
+        public void AddLen(uint len)
+        {
+            // 0 -> empty item => 0
+            // 10 -> 8 bits length (tiny)
+            // 110 -> 16 bits length (small)
+            // 111 -> 24 bits length (large)
+
+            // size array
+            if (len == 0)
+            {
+                ResizeToFit(1);
+            } else if (len < 256)
+            {
+                ResizeToFit(10);
+            } else if (len < 65536)
+            {
+                ResizeToFit(19);
+            } else
+            {
+                ResizeToFit(27);
+            }
+            if (len == 0)
+            {
+                fBitsLength++;
+                return;
+            }
+
+            Add1();
+            if (len < 256)
+            {
+                
+                fBitsLength++;
+                UnsafeAdd8((byte)len);
+            }
+            else
+            {
+                Add1();
+                if (len < 65536)
+                {
+                    fBitsLength++;
+                    UnsafeAddU32(len, 16);
+                }
+                else
+                {
+                    if (len >= 16777216) throw new ArgumentOutOfRangeException("Objects may not exceed items 16777215 in length");
+                    Add1();
+                    UnsafeAddU32(len, 24);
+                }
+            }
+        }
         /// <summary>
         /// Stores the length of an object by using the least possible space
         /// and resizes the BVector to fit the length indicator and the object itself
@@ -320,6 +377,14 @@ namespace Antara.Data.Binary
             }
         }
 
+        /// <summary>
+        /// Returns the length of an object previously added with <see cref="AddLen(uint)"/>
+        /// </summary>
+        /// <returns></returns>
+        public int GetLen()
+        {
+            return _GetObjectLen();
+        }
         /// <summary>
         /// Returns the length of an object
         /// </summary>
