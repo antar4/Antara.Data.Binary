@@ -1,4 +1,4 @@
-# Serializing Classes
+# ![alt text](http://cdn.3volve.io/adb/images/logo/0.5x/logo@0.5x.png "ADB Logo")   Serializing Classes
 
 Serializing classes is as simple as adding the data they hold to a `BVector` and returning the byte[].
 

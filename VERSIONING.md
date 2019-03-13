@@ -1,4 +1,4 @@
-# Versioning
+# ![alt text](http://cdn.3volve.io/adb/images/logo/0.5x/logo@0.5x.png "ADB Logo")   Versioning
 
 Versioning is important for data that you intend to store. As all developers know, the requirements of any software change over time and so does the data that serves it, which makes it imperative to be able to distinguish different versions stored.
 

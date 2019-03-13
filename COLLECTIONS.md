@@ -1,4 +1,4 @@
-# Serializing collections
+# ![alt text](http://cdn.3volve.io/adb/images/logo/0.5x/logo@0.5x.png "ADB Logo")   Serializing collections
 
 Serializing collections with Antara.Data.Binary follows the same logic as nested classes. 
 

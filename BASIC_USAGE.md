@@ -1,4 +1,4 @@
-# Basic Usage
+# ![alt text](http://cdn.3volve.io/adb/images/logo/0.5x/logo@0.5x.png "ADB Logo")   Basic Usage
 
 The central object in Antara.Data.Binary is the `BVector` class. It is your one stop shop for 99% of the operations in Antara.Data.Binary. It allows you to add and read data.
 

@@ -1,4 +1,4 @@
-# ![alt text](http://cdn.3volve.io/adb/images/logo/0.5x/logo@0.5x.png "ADB Logo") Antara.Data.Binary (ADB)
+# ![alt text](http://cdn.3volve.io/adb/images/logo/0.5x/logo@0.5x.png "ADB Logo")  Antara.Data.Binary (ADB)
 
 General purpose high performance binary serialization library
 
